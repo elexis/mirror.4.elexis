@@ -1,0 +1,175 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.elexis.base</groupId>
+  <artifactId>mirror.4.elexis</artifactId>
+  <version>3.0.0-SNAPSHOT</version>
+  <properties>
+    <tycho-version>0.18.1</tycho-version>
+  </properties>
+  <!--packaging>eclipse-repository</packaging-->
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-p2-extras-plugin</artifactId>
+            <version>${tycho-version}</version>
+            <executions>
+                <execution>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>mirror</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <source>
+                    <!-- source repositories to mirror from -->
+                    <repository>
+                        <url>http://ageto.github.com/gyrex-jaxrs-application</url>
+                        <layout>p2</layout>
+                    </repository>
+                    <repository>
+                      <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository</url>
+                    </repository>
+                    <repository>
+                        <url>http://download.eclipse.org/eclipse/updates/3.8</url>
+                    </repository>
+                    <repository>
+                      <url>http://download.eclipse.org/releases/juno</url>
+                    </repository>
+                    <repository>
+                      <url>http://download.elexis.info/elexis.3rdparty.libraries</url>
+                    </repository>
+                </source>
+                <!-- List of IUs to mirror. If omitted, allIUs will be mirrored. -->
+                <!-- Omitted IU version element means latest version of the IU -->
+                <ius>
+                  <iu>
+                    <id>org.eclipse.emf.sdk.feature.group</id>
+                    <id>org.eclipse.platform.feature.group</id>
+                    <id>org.eclipse.platform.ide</id>
+                    <id>org.eclipse.equinox.executable.feature.group</id>
+                    <id>org.eclipse.equinox.executable</id>
+                    <id>org.eclipse.platform.sdk</id>
+                    <id>org.eclipse.pde.junit.runtime.standalone.feature.groupk</id>
+                    <id>org.eclipse.rcp.feature.group</id>
+                  </iu>
+                  <iu> <!-- put into a separate id or it would not have been included -->
+                    <id>org.eclipse.gyrex.features.addons.jersey.jaxrs.feature.group</id>
+                  </iu>
+                  <iu>
+                    <id>ch.qos.logback.core</id>
+                    <id>ch.qos.logback.slf4j</id>
+                    <id>org.slf4j.api</id>
+                    <id>org.slf4j.ext</id>
+                    <id>org.slf4j.jul</id>
+                    <id>org.slf4j.jcl</id>
+                    <id>org.slf4j.log4j</id>
+                    <id>org.slf4j.nop</id>
+                    <id>javax.ws.rs</id>
+                  </iu>
+                  <iu> <!-- for elexis.3rdparty.libraries -->
+                    <id>ag.ion.bion.workbench.office.editor.core</id>
+                    <id>ag.ion.noa</id>
+                    <id>ag.ion.noa4e.ui</id>
+                    <id>antlr</id>
+                    <id>antlr.stringtemplate</id>
+                    <id>bcprov</id>
+                    <id>bsf</id>
+                    <id>cal10n.api</id>
+                    <id>ch.qos.logback.classic</id>
+                    <id>ch.qos.logback.core</id>
+                    <id>com.healthmarketscience.jackcess</id>
+                    <id>com.ibm.icu.4j</id>
+                    <id>com.mysql.jdbc</id>
+                    <id>com.thoughtworks.xstream</id>
+                    <id>com.wutka.dtdparser</id>
+                    <id>commons-collections</id>
+                    <id>commons-lang</id>
+                    <id>commons-logging</id>
+                    <id>dom4j</id>
+                    <id>groovy-all</id>
+                    <id>jackson-core-lgpl</id>
+                    <id>javassist</id>
+                    <id>javax.persistence.api</id>
+                    <id>javax.transaction.jta</id>
+                    <id>javax.ws.rs.jsr311-api</id>
+                    <id>javax.xml.jaxp-api</id>
+                    <id>jaxen</id>
+                    <id>jboss.javassist</id>
+                    <id>jline</id>
+                    <id>net.sf.opencsv</id>
+                    <id>ognl</id>
+                    <id>org.apache.ant.launcher</id>
+                    <id>org.apache.commons.io</id>
+                    <id>org.apache.commons.lang</id>
+                    <id>org.apache.commons.lang3</id>
+                    <id>org.apache.ibatis.sqlmap</id>
+                    <id>org.apache.poi</id>
+                    <id>org.beanshell.bsh</id>
+                    <id>org.freemarker</id>
+                    <id>org.h2</id>
+                    <id>org.hibernate.core</id>
+                    <id>org.jdom</id>
+                    <id>org.milyn.commons</id>
+                    <id>org.milyn.edisax-parser</id>
+                    <id>org.milyn.scribe-ibatis</id>
+                    <id>org.milyn.scribe-jpa</id>
+                    <id>org.milyn.smooks-camel</id>
+                    <id>org.milyn.smooks-csv</id>
+                    <id>org.milyn.smooks-fixed-length</id>
+                    <id>org.milyn.smooks-javabean</id>
+                    <id>org.milyn.smooks-misc</id>
+                    <id>org.milyn.smooks-persistence</id>
+                    <id>org.milyn.smooks-routing</id>
+                    <id>org.milyn.smooks-rules</id>
+                    <id>org.milyn.smooks-scripting</id>
+                    <id>org.milyn.smooks-templating</id>
+                    <id>org.milyn.smooks-validation</id>
+                    <id>org.milyn.smooks-yaml</id>
+                    <id>org.odftoolkit.odfdom-java</id>
+                    <id>org.postgresql</id>
+                    <id>org.rxtx</id>
+                    <id>slf4j.api</id>
+                    <id>slf4j.ext</id>
+                    <id>slf4j.jcl</id>
+                    <id>slf4j.log4j12</id>
+                    <id>uk.org.lidalia.sysout-over-slf4j</id>
+                    <id>xalan</id>
+                    <id>xalan.serializer</id>
+                    <id>xerces.Impl</id>
+                    <id>xml-apis</id>
+                    <id>xom</id>
+                  </iu>
+                </ius>
+                <!-- The destination directory to mirror to. -->
+                <destination>${project.build.directory}/repository</destination>
+                <!-- Whether only strict dependencies should be followed. -->
+                <!-- "strict" means perfect version match -->
+                <followStrictOnly>false</followStrictOnly>
+                <!-- Whether or not to follow optional requirements. -->
+                <includeOptional>true</includeOptional>
+                <!-- Whether or not to follow non-greedy requirements. -->
+                <includeNonGreedy>true</includeNonGreedy>
+                <!-- Filter properties. E.g. filter only one platform -->
+                <filter>
+                    <!--osgi.os>linux</osgi.os>
+                    <osgi.ws>gtk</osgi.ws>
+                    <osgi.arch>x86_64</osgi.arch-->
+                </filter>
+                <!-- Whether to filter the resulting set of IUs to only -->
+                <!-- include the latest version of each IU -->
+                <latestVersionOnly>true</latestVersionOnly>
+                <!-- don't mirror artifacts, only metadata -->
+                <mirrorMetadataOnly>false</mirrorMetadataOnly>
+                <!-- whether to compress the content.xml/artifacts.xml -->
+                <compress>true</compress>
+                <!-- whether to append to the target repository content -->
+                <append>true</append>
+                <!-- whether to mirror pack200 artifacts also. Available since tycho-extras 0.17.0 -->
+                <includePacked>true</includePacked>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+</project>

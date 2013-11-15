@@ -1,0 +1,9 @@
+h1. mirror.4.elexis
+
+This is just a simple maven/tycho build script to create a P2 mirror which should contain
+all needed features and plugins to create an Elexis 3.0 application.
+
+In a seperate project https://github.com/elexis/elexis.3rdparty.libraries we transformed
+some maven artefacts into p2 plugins
+
+This is a new attempt to offer also all stuff from the delta packs for all of our supported architectures.
