@@ -1,13 +1,10 @@
 h1. mirror.4.elexis
 
-This is just a simple maven/tycho build script to create a P2 mirror which should contain
-all needed features and plugins to create an Elexis 3.0 application.
+This is just a simple maven/tycho build script to create a P2 mirror which should contain all needed features and plugins to create an Elexis 3.0 application.
 
-In a seperate project https://github.com/elexis/elexis.3rdparty.libraries we transformed
-some maven artefacts into p2 plugins.
+In a seperate project https://github.com/elexis/elexis.3rdparty.libraries we transformed some maven artefacts into p2 plugins.
 
-There is a Jenkins-CI job at http://srv.elexis.info/jenkins/view/3.0/job/Elexis-3.0-mirror/ 
-which places its output http://download.elexis.info/mirror.4.elexis/snapshot
+There is a Jenkins-CI job at http://srv.elexis.info/jenkins/view/3.0/job/Elexis-3.0-mirror/which places its output http://download.elexis.info/mirror.4.elexis/snapshot
 
 This is a new attempt to offer also all stuff from the delta packs for all of our supported architectures.
 
@@ -24,7 +21,22 @@ h2. building
 I recommend calling maven with the parameters @mvn clean package  -Dtycho.localArtifacts=ignore@ to ensure that no local artifacts might pollute your build.
 
 The following warning seems to be harmless:
-@[WARNING] Mirror tool: Problems resolving provisioning plan.: [Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.]@
+
+bc. [WARNING] Mirror tool: Problems resolving provisioning plan.: [
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.]@
 
 h2. hint
 
@@ -32,10 +44,14 @@ Keep pom.xml in sync with the elexis-3-core "juno-target":https://github.com/ele
 
 h2. more info
 
-Hints and tricks see http://wiki.eclipse.org/Tycho/Target_Platform#
-http://wiki.eclipse.org/Tycho/Additional_Tools
+See 
+# http://wiki.eclipse.org/Tycho/Target_Platform#
+# http://wiki.eclipse.org/Tycho/Additional_Tools
 
 Listing IUs available.
 # "P2-Browser":http://ifedorenko.github.com/p2-browser/javaws/com.ifedorenko.p2browser.jnlp (via Java WebStart Launcher)
-# on the command line: @java -jar plugins/org.eclipse.equinox.launcher_*.jar -debug -consolelog -application org.eclipse.equinox.p2.director -repository http://download.eclipse.org/releases/juno/ -list@
+# on the command line: 
+
+bc. java -jar plugins/org.eclipse.equinox.launcher_*.jar -debug -consolelog -application org.eclipse.equinox.p2.director  -list \
+-repository http://download.eclipse.org/releases/juno/
 
