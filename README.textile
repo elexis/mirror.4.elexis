@@ -52,6 +52,7 @@ Listing IUs available.
 # "P2-Browser":http://ifedorenko.github.com/p2-browser/javaws/com.ifedorenko.p2browser.jnlp (via Java WebStart Launcher)
 # on the command line: 
 
-bc. java -jar plugins/org.eclipse.equinox.launcher_*.jar -debug -consolelog -application org.eclipse.equinox.p2.director  -list \
+bc. java -jar plugins/org.eclipse.equinox.launcher_*.jar -debug -consolelog \
+-application org.eclipse.equinox.p2.director  -list \
 -repository http://download.eclipse.org/releases/juno/
 
