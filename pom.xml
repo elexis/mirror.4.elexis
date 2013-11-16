@@ -1,6 +1,6 @@
 <project>
-  <!-- The file in here must be kept in sync with the file 
-    https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target -->                  
+  <!-- The file in here must be kept in sync with the file
+    https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target
   -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>ch.elexis.base</groupId>
@@ -39,19 +39,19 @@
                       <!-- here we would get org.eclipse.platform.feature.group in version 4.2 and not 3.8 !! -->
                       <!-- but we get the warning
 WARNING] Mirror tool: Problems resolving provisioning plan.: [
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
-Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.;
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.;
 Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.]
 Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R7xFOXFLWUl7PpMEeZNIGkb4 (Descriptor: canonical: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R7xFOXFLWUl7PpMEeZNIGkb4)
   -->
@@ -66,11 +66,11 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                 <!-- List of IUs to mirror. If omitted, allIUs will be mirrored. -->
                 <!-- Omitted IU version element means latest version of the IU -->
                 <ius>
-                  <!-- The version in here must be kept in sync with the file 
+                  <!-- The version in here must be kept in sync with the file
                     https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target
-                    -->                  
+                    -->
                   <iu><id>org.eclipse.gyrex.features.addons.jersey.jaxrs.feature.group</id> <version>1.0.0.v20120604-1901</version></iu>
-                  
+
                   <!-- Orbit bundles -->
                   <iu><id>ch.qos.logback.classic</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
                   <iu><id>ch.qos.logback.core</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
@@ -82,8 +82,8 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                   <iu><id>org.slf4j.log4j</id> <!--version>1.7.2.v20130115-1340</version>--></iu>
                   <iu><id>org.slf4j.nop</id> <!--version>1.7.2.v201212060727</version>--></iu>
                   <iu><id>javax.ws.rs</id> <!--version>1.1.1.v20130318-1750</version>--></iu>
-                  
-                  
+
+
                   <iu><id>org.eclipse.emf.sdk.feature.group</id> <version>2.8.3.v20130125-0826</version></iu>
                   <!--<iu><id>org.eclipse.emf.sdk.feature.group</id> <version>2.8.3.v20130125-0826</version></iu>
                   <iu><id>org.eclipse.platform.ide</id> <version>3.8.2.M20130131-0800</version></iu>
@@ -93,7 +93,7 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                   <iu><id>org.eclipse.equinox.executable.feature.group</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
                   <iu><id>org.eclipse.equinox.executable</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
                   <iu><id>org.eclipse.pde.junit.runtime.standalone.feature.group</id> <version>1.1.0.v20121207-183635-7a81FKwFBBqyauz0GKeGkIx3IS70</version></iu>
-                  
+
                 </ius>
                 <!-- The destination directory to mirror to. -->
                 <destination>${project.build.directory}/repository</destination>
@@ -111,7 +111,7 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                     <osgi.arch>x86_64</osgi.arch-->
                 </filter>
                 <!-- Whether to filter the resulting set of IUs to only -->
-                <!-- include the latest version of each IU 
+                <!-- include the latest version of each IU
                   build with mvn clean package  -Dtycho.localArtifacts=ignore
                   latest => false size => 437 MB
                 -->
