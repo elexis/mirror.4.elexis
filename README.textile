@@ -18,6 +18,8 @@ The emf.sdk we get from the releases/juno as it is not available for 3.8.
 
 h2. building
 
+Needs about 250 MB for a repository under target/repository.
+
 I recommend calling maven with the parameters @mvn clean package  -Dtycho.localArtifacts=ignore@ to ensure that no local artifacts might pollute your build.
 
 The following warning seems to be harmless:
