@@ -1,4 +1,7 @@
 <project>
+  <!-- The file in here must be kept in sync with the file 
+    https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target -->                  
+  -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>ch.elexis.base</groupId>
   <artifactId>mirror.4.elexis</artifactId>
@@ -25,14 +28,6 @@
                 <source>
                     <!-- source repositories to mirror from -->
                     <repository>
-                      <url>http://download.eclipse.org/releases/juno</url>
-                      <layout>p2</layout>
-                    </repository>
-                    <repository>
-                      <url>http://download.eclipse.org/eclipse/updates/3.8</url>
-                      <layout>p2</layout>
-                    </repository>
-                    <repository>
                       <url>http://ageto.github.com/gyrex-jaxrs-application</url>
                       <layout>p2</layout>
                     </repository>
@@ -41,7 +36,30 @@
                       <layout>p2</layout>
                     </repository>
                     <repository>
-                      <url>http://download.elexis.info/elexis.3rdparty.libraries</url>
+                      <!-- here we would get org.eclipse.platform.feature.group in version 4.2 and not 3.8 !! -->
+                      <!-- but we get the warning
+WARNING] Mirror tool: Problems resolving provisioning plan.: [
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.solaris.sparc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.carbon.macosx 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.aix.ppc 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.hpux.ia64_32 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.motif.linux.x86 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.win32.win32.ia64 0.0.0.; 
+Unable to satisfy dependency from org.eclipse.equinox.executable.feature.group 3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of to org.eclipse.equinox.launcher.wpf.win32.x86 0.0.0.]
+Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R7xFOXFLWUl7PpMEeZNIGkb4 (Descriptor: canonical: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R7xFOXFLWUl7PpMEeZNIGkb4)
+  -->
+                      <url>http://download.eclipse.org/releases/juno/201303010900</url>
+                      <layout>p2</layout>
+                    </repository>
+                    <repository>
+                      <url>http://download.eclipse.org/eclipse/updates/3.8/R-3.8.2-201301310800</url>
                       <layout>p2</layout>
                     </repository>
                 </source>
@@ -49,17 +67,11 @@
                 <!-- Omitted IU version element means latest version of the IU -->
                 <ius>
                   <!-- The version in here must be kept in sync with the file 
-                    https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target -->                  
-                  <iu><id>org.eclipse.emf.ecore.feature.group</id> <version>2.8.3.v20130125-0546</version></iu>
+                    https://github.com/elexis/elexis-3-core/blob/master/ch.elexis.target/juno-target.target
+                    -->                  
                   <iu><id>org.eclipse.gyrex.features.addons.jersey.jaxrs.feature.group</id> <version>1.0.0.v20120604-1901</version></iu>
-                  <!--<iu><id>org.eclipse.emf.sdk.feature.group</id> <version>2.8.3.v20130125-0826</version></iu>
-                  <iu><id>org.eclipse.platform.ide</id> <version>3.8.2.M20130131-0800</version></iu>
-                  <iu><id>org.eclipse.platform.sdk</id> <version>3.8.2.M20130131-0800</version></iu>
-                  -->
-                  <iu><id>org.eclipse.platform.feature.group</id> <version>3.8.1.v20130118-180812-9jF7oIBFG8eU2pim-VbIlTuQjY0RWWK3x-bv4I</version></iu>
-                  <iu><id>org.eclipse.equinox.executable.feature.group</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
-                  <iu><id>org.eclipse.equinox.executable</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
-                  <iu><id>org.eclipse.pde.junit.runtime.standalone.feature.group</id> <version>1.1.0.v20121207-183635-7a81FKwFBBqyauz0GKeGkIx3IS70</version></iu>
+                  
+                  <!-- Orbit bundles -->
                   <iu><id>ch.qos.logback.classic</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
                   <iu><id>ch.qos.logback.core</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
                   <iu><id>ch.qos.logback.slf4j</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
@@ -69,79 +81,19 @@
                   <iu><id>org.slf4j.jcl</id> <!--version>1.7.2.v20130115-1340</version>--></iu>
                   <iu><id>org.slf4j.log4j</id> <!--version>1.7.2.v20130115-1340</version>--></iu>
                   <iu><id>org.slf4j.nop</id> <!--version>1.7.2.v201212060727</version>--></iu>
-                  <iu><id>javax.ws.rs</id> <!--version>1.1.1.v20130318-1750</version>--></iu> 
-
-                  <iu><id>ag.ion.bion.workbench.office.editor.core</id></iu>
-                  <iu><id>ag.ion.noa</id></iu>
-                  <iu><id>ag.ion.noa4e.ui</id></iu>
-                  <iu><id>antlr</id></iu>
-                  <iu><id>antlr.stringtemplate</id></iu>
-                  <iu><id>bcprov</id></iu>
-                  <iu><id>bsf</id></iu>
-                  <iu><id>cal10n.api</id></iu>
-                  <iu><id>ch.qos.logback.classic</id></iu>
-                  <iu><id>ch.qos.logback.core</id></iu>
-                  <iu><id>com.healthmarketscience.jackcess</id></iu>
-                  <iu><id>com.ibm.icu.4j</id></iu>
-                  <iu><id>com.mysql.jdbc</id></iu>
-                  <iu><id>com.thoughtworks.xstream</id></iu>
-                  <iu><id>com.wutka.dtdparser</id></iu>
-                  <iu><id>commons-collections</id></iu>
-                  <iu><id>commons-lang</id></iu>
-                  <iu><id>commons-logging</id></iu>
-                  <iu><id>dom4j</id></iu>
-                  <iu><id>groovy-all</id></iu>
-                  <iu><id>jackson-core-lgpl</id></iu>
-                  <iu><id>javassist</id></iu>
-                  <iu><id>javax.persistence.api</id></iu>
-                  <iu><id>javax.transaction.jta</id></iu>
-                  <iu><id>javax.ws.rs.jsr311-api</id></iu>
-                  <iu><id>javax.xml.jaxp-api</id></iu>
-                  <iu><id>jaxen</id></iu>
-                  <iu><id>jboss.javassist</id></iu>
-                  <iu><id>jline</id></iu>
-                  <iu><id>net.sf.opencsv</id></iu>
-                  <iu><id>ognl</id></iu>
-                  <iu><id>org.apache.ant.launcher</id></iu>
-                  <iu><id>org.apache.commons.io</id></iu>
-                  <iu><id>org.apache.commons.lang</id></iu>
-                  <iu><id>org.apache.commons.lang3</id></iu>
-                  <iu><id>org.apache.ibatis.sqlmap</id></iu>
-                  <iu><id>org.apache.poi</id></iu>
-                  <iu><id>org.beanshell.bsh</id></iu>
-                  <iu><id>org.freemarker</id></iu>
-                  <iu><id>org.h2</id></iu>
-                  <iu><id>org.hibernate.core</id></iu>
-                  <iu><id>org.jdom</id></iu>
-                  <iu><id>org.milyn.commons</id></iu>
-                  <iu><id>org.milyn.edisax-parser</id></iu>
-                  <iu><id>org.milyn.scribe-ibatis</id></iu>
-                  <iu><id>org.milyn.scribe-jpa</id></iu>
-                  <iu><id>org.milyn.smooks-camel</id></iu>
-                  <iu><id>org.milyn.smooks-csv</id></iu>
-                  <iu><id>org.milyn.smooks-fixed-length</id></iu>
-                  <iu><id>org.milyn.smooks-javabean</id></iu>
-                  <iu><id>org.milyn.smooks-misc</id></iu>
-                  <iu><id>org.milyn.smooks-persistence</id></iu>
-                  <iu><id>org.milyn.smooks-routing</id></iu>
-                  <iu><id>org.milyn.smooks-rules</id></iu>
-                  <iu><id>org.milyn.smooks-scripting</id></iu>
-                  <iu><id>org.milyn.smooks-templating</id></iu>
-                  <iu><id>org.milyn.smooks-validation</id></iu>
-                  <iu><id>org.milyn.smooks-yaml</id></iu>
-                  <iu><id>org.odftoolkit.odfdom-java</id></iu>
-                  <iu><id>org.postgresql</id></iu>
-                  <iu><id>org.rxtx</id></iu>
-                  <iu><id>slf4j.api</id></iu>
-                  <iu><id>slf4j.ext</id></iu>
-                  <iu><id>slf4j.jcl</id></iu>
-                  <iu><id>slf4j.log4j12</id></iu>
-                  <iu><id>uk.org.lidalia.sysout-over-slf4j</id></iu>
-                  <iu><id>xalan</id></iu>
-                  <iu><id>xalan.serializer</id></iu>
-                  <iu><id>xerces.Impl</id></iu>
-                  <iu><id>xml-apis</id></iu>
-                  <iu><id>xom</id></iu>
+                  <iu><id>javax.ws.rs</id> <!--version>1.1.1.v20130318-1750</version>--></iu>
+                  
+                  
+                  <iu><id>org.eclipse.emf.sdk.feature.group</id> <version>2.8.3.v20130125-0826</version></iu>
+                  <!--<iu><id>org.eclipse.emf.sdk.feature.group</id> <version>2.8.3.v20130125-0826</version></iu>
+                  <iu><id>org.eclipse.platform.ide</id> <version>3.8.2.M20130131-0800</version></iu>
+                  <iu><id>org.eclipse.platform.sdk</id> <version>3.8.2.M20130131-0800</version></iu>
+                  -->
+                  <iu><id>org.eclipse.platform.feature.group</id> <version>3.8.1.v20130118-180812-9jF7oIBFG8eU2pim-VbIlTuQjY0RWWK3x-bv4I</version></iu>
+                  <iu><id>org.eclipse.equinox.executable.feature.group</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
+                  <iu><id>org.eclipse.equinox.executable</id> <version>3.6.0.v20121119-201001-7P7OG2BFLWUl7UnqBnO8V4Of</version></iu>
+                  <iu><id>org.eclipse.pde.junit.runtime.standalone.feature.group</id> <version>1.1.0.v20121207-183635-7a81FKwFBBqyauz0GKeGkIx3IS70</version></iu>
+                  
                 </ius>
                 <!-- The destination directory to mirror to. -->
                 <destination>${project.build.directory}/repository</destination>
@@ -149,7 +101,7 @@
                 <!-- "strict" means perfect version match -->
                 <followStrictOnly>false</followStrictOnly>
                 <!-- Whether or not to follow optional requirements. -->
-                <includeOptional>false</includeOptional>
+                <includeOptional>true</includeOptional>
                 <!-- Whether or not to follow non-greedy requirements. -->
                 <includeNonGreedy>true</includeNonGreedy>
                 <!-- Filter properties. E.g. filter only one platform -->
@@ -159,7 +111,10 @@
                     <osgi.arch>x86_64</osgi.arch-->
                 </filter>
                 <!-- Whether to filter the resulting set of IUs to only -->
-                <!-- include the latest version of each IU -->
+                <!-- include the latest version of each IU 
+                  build with mvn clean package  -Dtycho.localArtifacts=ignore
+                  latest => false size => 437 MB
+                -->
                 <latestVersionOnly>false</latestVersionOnly>
                 <!-- don't mirror artifacts, only metadata -->
                 <mirrorMetadataOnly>false</mirrorMetadataOnly>
@@ -168,7 +123,7 @@
                 <!-- whether to append to the target repository content -->
                 <append>true</append>
                 <!-- whether to mirror pack200 artifacts also. Available since tycho-extras 0.17.0 -->
-                <includePacked>true</includePacked>
+                <includePacked>false</includePacked>
             </configuration>
         </plugin>
     </plugins>
