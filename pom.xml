@@ -62,6 +62,10 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                       <url>http://download.eclipse.org/eclipse/updates/3.8/R-3.8.2-201301310800</url>
                       <layout>p2</layout>
                     </repository>
+                    <repository>
+                      <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20130517111416/repository/</url>
+                      <layout>p2</layout>
+                    </repository>
                 </source>
                 <!-- List of IUs to mirror. If omitted, allIUs will be mirrored. -->
                 <!-- Omitted IU version element means latest version of the IU -->
@@ -72,6 +76,8 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                   <iu><id>org.eclipse.gyrex.features.addons.jersey.jaxrs.feature.group</id> <version>1.0.0.v20120604-1901</version></iu>
 
                   <!-- Orbit bundles -->
+                  <iu><id>org.apache.commons.dbcp</id> <version>1.4.0.v201204271417</version></iu>
+                  <iu><id>org.apache.commons.pool</id> <version>1.6.0.v201204271246</version></iu>
                   <iu><id>ch.qos.logback.classic</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
                   <iu><id>ch.qos.logback.core</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
                   <iu><id>ch.qos.logback.slf4j</id> <!--version>1.0.7.v20121108-1250</version>--></iu>
