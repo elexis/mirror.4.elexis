@@ -87,6 +87,7 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                   <iu><id>org.slf4j.jcl</id> <!--version>1.7.2.v20130115-1340</version>--></iu>
                   <iu><id>org.slf4j.log4j</id> <!--version>1.7.2.v20130115-1340</version>--></iu>
                   <iu><id>org.slf4j.nop</id> <!--version>1.7.2.v201212060727</version>--></iu>
+                  <iu><id>org.junit</id> <!--version>1.1.1.v20130318-1750</version>--></iu>
                   <iu><id>javax.ws.rs</id> <!--version>1.1.1.v20130318-1750</version>--></iu>
 
 
