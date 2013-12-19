@@ -59,6 +59,10 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
                       <layout>p2</layout>
                     </repository>
                     <repository>
+                      <url>http://download.elexis.info/elexis.3rdparty.libraries/</url>
+                      <layout>p2</layout>
+                    </repository>
+                    <repository>
                       <url>http://download.eclipse.org/eclipse/updates/3.8/R-3.8.2-201301310800</url>
                       <layout>p2</layout>
                     </repository>
