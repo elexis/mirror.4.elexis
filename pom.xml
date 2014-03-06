@@ -277,13 +277,13 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
             <version>3.8.2.v20130116-090414-8-8nFu3FNOfwKLRttdWQJ-2z-_83</version>
           </iu>
           <iu>
-            <id>org.eclipse.nebula.cwt.feature.group</id>
+            <id>org.eclipse.nebula.cwt.feature</id>
           </iu>
           <iu>
-            <id>org.eclipse.nebula.widgets.cdatetime.feature.group</id>
+            <id>org.eclipse.nebula.widgets.cdatetime.feature</id>
           </iu>
           <iu>
-            <id>org.eclipse.nebula.widgets.tablecombo.feature.group</id>
+            <id>org.eclipse.nebula.widgets.tablecombo.feature</id>
           </iu>
         </ius>
         <!-- The destination directory to mirror to. -->
