@@ -80,6 +80,10 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
             <url>http://download.eclipse.org/nattable/releases/1.0.1/repository/</url>
             <layout>p2</layout>
           </repository>
+          <repository>
+            <url>http://download.eclipse.org/technology/nebula/snapshot/</url>
+            <layout>p2</layout>
+          </repository>
         </source>
         <!-- List of IUs to mirror. If omitted, allIUs will be mirrored. -->
         <!-- Omitted IU version element means latest version of the IU -->
@@ -271,6 +275,15 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
           <iu>
             <id>org.eclipse.jdt.source.feature.group</id>
             <version>3.8.2.v20130116-090414-8-8nFu3FNOfwKLRttdWQJ-2z-_83</version>
+          </iu>
+          <iu>
+            <id>org.eclipse.nebula.cwt.feature.group</id>
+          </iu>
+          <iu>
+            <id>org.eclipse.nebula.widgets.cdatetime.feature.group</id>
+          </iu>
+          <iu>
+            <id>org.eclipse.nebula.widgets.tablecombo.feature.group</id>
           </iu>
         </ius>
         <!-- The destination directory to mirror to. -->
