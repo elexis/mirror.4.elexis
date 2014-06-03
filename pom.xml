@@ -301,6 +301,9 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
           <iu>
             <id>org.eclipse.emf.ecore.xcore.sdk.feature.group</id>
           </iu>
+          <iu>
+            <id>org.eclipse.emf.ecore.xcore.lib.feature.group</id>
+          </iu>
         </ius>
         <!-- The destination directory to mirror to. -->
         <destination>${project.build.directory}/repository</destination>
