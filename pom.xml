@@ -122,22 +122,6 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
           </iu>
           <!-- Orbit bundles -->
           <iu>
-          	<id>org.apache.httpcomponents.httpcore.source</id>
-          	<version>4.1.4.v201203221030</version>
-          </iu>
-          <iu>
-          	<id>org.apache.httpcomponents.httpcore</id>
-          	<version>4.1.4.v201203221030</version>
-          </iu>
-          <iu>
-          	<id>org.apache.httpcomponents.httpclient.source</id>
-          	<version>4.1.3.v201209201135</version>
-          </iu>
-          <iu>
-          	<id>org.apache.httpcomponents.httpclient</id>
-          	<version>4.1.3.v201209201135</version>
-          </iu>
-          <iu>
             <id>org.apache.commons.exec</id>
             <version>1.1.0.v201301240602</version>
           </iu>
