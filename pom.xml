@@ -88,6 +88,10 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
             <url>http://download.eclipse.org/tools/ajdt/42/update</url>
             <layout>p2</layout>
           </repository>
+          <repository>
+            <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20150124073747/repository/</url>
+            <layout>p2</layout>
+          </repository>
         </source>
         <!-- List of IUs to mirror. If omitted, allIUs will be mirrored. -->
         <!-- Omitted IU version element means latest version of the IU -->
@@ -140,6 +144,9 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
           <iu>
             <id>ch.qos.logback.core</id>
             <!--version>1.0.7.v20121108-1250</version>-->
+          </iu>
+          <iu>
+            <id>edu.emory.mathcs.backport</id>
           </iu>
           <iu>
             <id>ch.qos.logback.slf4j</id>
