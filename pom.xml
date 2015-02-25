@@ -106,6 +106,7 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
           </iu>
           <iu>
             <id>org.eclipse.mylyn.wikitext_feature.feature.group</id>
+            <version>2.2.0.v20140905-1515</version>
           </iu>
           <iu>
             <id>org.eclipse.gyrex.features.addons.jersey.jaxrs.feature.group</id>
