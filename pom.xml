@@ -149,6 +149,9 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
             <id>edu.emory.mathcs.backport</id>
           </iu>
           <iu>
+            <id>edu.emory.mathcs.backport.source</id>
+          </iu>
+          <iu>
             <id>ch.qos.logback.slf4j</id>
             <!--version>1.0.7.v20121108-1250</version>-->
           </iu>
