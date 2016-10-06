@@ -192,6 +192,10 @@ Mirroring: org.eclipse.update.feature,org.eclipse.help,1.4.1.v20120912-145617-8R
             <version>1.4.0.v201204271417</version>
           </iu>
           <iu>
+            <id>org.apache.commons.exec.source</id>
+            <version>1.1.0.v201301240602</version>
+          </iu>
+          <iu>
             <id>org.apache.commons.pool.source</id>
             <version>1.6.0.v201204271246</version>
           </iu>
